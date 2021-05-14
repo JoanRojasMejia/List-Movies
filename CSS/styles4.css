@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container_1 {
+  width: 98.75vw;
+  height: 150vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../img/fondo_2.jpg);
+  background-repeat: round;
+}
+
+.container_2 {
+  width: 450px;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(20px);
+  border: 1.5px solid rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container_2 h1 {
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  margin: 10px 15px;
+  color: #000;
+}
+
+.container_2 hr {
+  margin-bottom: 20px;
+  border: 1px solid #000;
+}
+
+.container_2 form {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.container_2 form label {
+  padding-right: 15px;
+  font-size: 19px;
+  font-weight: 400;
+}
+
+.container_2 form input {
+  width: 200px;
+  padding: 5px;
+  margin-bottom: 15px;
+  border-radius: 15px;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  border: 1px solid rgba(197, 194, 194, 0.795);
+  outline: none;
+  box-shadow: 0px 5px 15px 2px rgba(0, 0, 0, 0.15);
+}
+
+.container_2 form button {
+  padding: 7.5px 50px;
+  margin-bottom: 20px;
+  margin-top: 3px;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid #0084ff;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: ease-out .3s;
+  position: relative;
+  z-index: 1;
+}
+
+.container_2 form button::after{  
+  position: absolute;
+  content: '';
+  border-radius: 15px;
+  width: 184.5px;
+  height: 34.5px;
+  border: 2px solid #0084ff;
+  left: -2.8px;
+  bottom: -1.5px;
+  animation: pulsacionBoton 1.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite;
+}
+
+.container_2 form button:hover {
+  color: #fff;
+}
+
+.container_2 form button::before{
+  transition: all .7s cubic-bezier(0.47, 0, 0.75, 0.72);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: "";
+  background: #0084ff;
+  border-radius: 10px;
+}
+
+.container_2 form button:hover::before{
+  transition: all .7s ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  z-index: -1;
+}
+
+.container_2 h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.container_2 .lists {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 5px 15px 2px rgba(0, 0, 0, 0.15);
+}
+
+.container_2 .lists .lis {
+  background: rgba(255, 255, 255, 0.3);
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.container_2 .lists .lis .first {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 20px 4px 0px;
+  position: relative;
+}
+
+.container_2 .lists .lis .first p:nth-child(1){
+  padding-left: 120px;
+}
+
+.container_2 .lists .lis .first p:nth-child(2){
+  position: absolute;
+  right: 70px;
+}
+
+
+.container_2 .lists .lis .second {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 0px;
+  position: relative;
+}
+
+.container_2 .lists .lis .second span:nth-child(1) {
+  padding-left: 12px;
+}
+
+.container_2 .lists .lis .second span:nth-child(2) {
+  position: absolute;
+  right: 70px;
+}
+
+.container_2 .lists .lis .second i {
+  padding-right: 15px;
+  cursor: pointer;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.container_2 .lists .lis .second i:hover {
+  color: rgb(163, 11, 11);
+  transform: rotateX(360deg);
+}
+
+@keyframes pulsacionBoton {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.2);
+  }
+}
