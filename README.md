@@ -1,2 +1,2 @@
 # Lista-Peliculas
-🖥️Es una mini app para guardar las películas favoritas.🎥
+🖥️ It is a mini app to save your favorite movies. 🎥
